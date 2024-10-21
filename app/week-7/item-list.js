@@ -35,30 +35,32 @@ const ItemList = ({ items }) => {
       <div className="mb-4 ">
         <div className="flex items-center">
           <h2 className="text-lg text-white">Sort By:</h2>
-          <button
-            className={`px-4 py-2 mr-2 ml-2 ${
-              sortBy === "name" ? "bg-blue-500" : "bg-gray-500"
-            } text-white rounded-lg hover:bg-blue-500`}
-            onClick={() => setSortBy("name")}
-          >
-            Name
-          </button>
-          <button
-            className={`px-4 py-2 mr-2 ${
-              sortBy === "category" ? "bg-blue-500" : "bg-gray-500"
-            } text-white rounded-lg hover:bg-blue-500`}
-            onClick={() => setSortBy("category")}
-          >
-            Category
-          </button>
-          <button
-            className={`px-4 py-2 ${
-              sortBy === "groupByCategory" ? "bg-blue-500" : "bg-gray-500"
-            } text-white rounded-lg hover:bg-blue-500`}
-            onClick={() => setSortBy("groupByCategory")}
-          >
-            Grouped Category
-          </button>
+          <div className="flex w-80">
+            <button
+              className={`px-4 py-2 mr-2 ml-2 ${
+                sortBy === "name" ? "bg-blue-500" : "bg-gray-500"
+              } text-white rounded-lg hover:bg-blue-500`}
+              onClick={() => setSortBy("name")}
+            >
+              Name
+            </button>
+            <button
+              className={`px-4 py-2 mr-2 ${
+                sortBy === "category" ? "bg-blue-500" : "bg-gray-500"
+              } text-white rounded-lg hover:bg-blue-500`}
+              onClick={() => setSortBy("category")}
+            >
+              Category
+            </button>
+            <button
+              className={`px-4 py-2 ${
+                sortBy === "groupByCategory" ? "bg-blue-500" : "bg-gray-500"
+              } text-white rounded-lg hover:bg-blue-500`}
+              onClick={() => setSortBy("groupByCategory")}
+            >
+              Grouped Category
+            </button>
+          </div>
         </div>
       </div>
 
