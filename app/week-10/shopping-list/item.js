@@ -1,5 +1,4 @@
 const Item = ({ name, quantity, category, onSelect, onDelete }) => {
-  console.log("onDelete Function:", onDelete); // debugging onDelete
   return (
     <li className="p-2 bg-gray-700 text-white rounded-lg flex justify-between items-center hover:bg-gray-500 cursor-pointer mb-2 w-96">
       <div onClick={onSelect} className="flex flex-col">
